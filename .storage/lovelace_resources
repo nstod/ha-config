@@ -1,0 +1,38 @@
+{
+    "data": {
+        "items": [
+            {
+                "id": "a793f47f793c494fafa891a7cd508362",
+                "type": "module",
+                "url": "/hacsfiles/mini-media-player/mini-media-player-bundle.js"
+            },
+            {
+                "id": "f2c2aae2b7a743228f281c8e4a662dd5",
+                "type": "module",
+                "url": "/hacsfiles/battery-entity.js?v=0.2"
+            },
+            {
+                "id": "d9d6d62989d04638bcfc8f2fcee28f10",
+                "type": "module",
+                "url": "/local/floorplan/floorplan-card.js?v=1.1.14"
+            },
+            {
+                "id": "75265306590b44dcb75233ebc2ae4a66",
+                "type": "module",
+                "url": "/hacsfiles/mini-graph-card/mini-graph-card-bundle.js"
+            },
+            {
+                "id": "6ae172801f984ab886c466e50a5f8986",
+                "type": "module",
+                "url": "/hacsfiles/config-template-card/config-template-card.js"
+            },
+            {
+                "id": "28296b7afb3f4349b15c2107b2c794d4",
+                "type": "module",
+                "url": "/hacsfiles/custom-header/custom-header.js"
+            }
+        ]
+    },
+    "key": "lovelace_resources",
+    "version": 1
+}

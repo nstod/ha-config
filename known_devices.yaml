@@ -1,0 +1,653 @@
+
+dd_wrt:
+  hide_if_away: false
+  icon:
+  mac: 10:DA:43:1F:D7:86
+  name: DD-WRT
+  picture:
+  track: true
+
+a4_8d_3b_bb_8e_89:
+  hide_if_away: false
+  icon:
+  mac: A4:8D:3B:BB:8E:89
+  name: a4 8d 3b bb 8e 89
+  picture:
+  track: true
+
+20_4c_03_3b_fa_ac:
+  hide_if_away: false
+  icon:
+  mac: 20:4C:03:3B:FA:AC
+  name: 20 4c 03 3b fa ac
+  picture:
+  track: true
+
+amazon_83232f18d_pcisys_net:
+  hide_if_away: false
+  icon:
+  mac: FC:A6:67:8C:4C:B2
+  name: amazon-83232f18d.pcisys.net
+  picture:
+  track: true
+
+canoncbdc8c_pcisys_net:
+  hide_if_away: false
+  icon:
+  mac: 10:98:C3:DA:39:0E
+  name: Canoncbdc8c.pcisys.net
+  picture:
+  track: true
+
+4c_56_9d_a9_c6_a0:
+  hide_if_away: false
+  icon:
+  mac: 4C:56:9D:A9:C6:A0
+  name: 4c 56 9d a9 c6 a0
+  picture:
+  track: true
+
+desktop_egfj12p_pcisys_net:
+  hide_if_away: false
+  icon:
+  mac: 9C:B6:D0:89:2E:5D
+  name: DESKTOP-EGFJ12P.pcisys.net
+  picture:
+  track: true
+
+nates_iphone_pcisys_net:
+  hide_if_away: false
+  icon:
+  mac: 34:08:BC:BD:81:AB
+  name: Nates-iPhone.pcisys.net
+  picture:
+  track: true
+
+iphone:
+  hide_if_away: false
+  icon:
+  mac: C4:2A:D0:02:6C:74
+  name: iPhone
+  picture:
+  track: true
+
+00_07_a6_13_ff_2b:
+  hide_if_away: false
+  icon:
+  mac: 00:07:A6:13:FF:2B
+  name: '*'
+  picture:
+  track: true
+
+00_07_a6_13_ff_34:
+  hide_if_away: false
+  icon:
+  mac: 00:07:A6:13:FF:34
+  name: '*'
+  picture:
+  track: true
+
+00_07_a6_13_fb_d0:
+  hide_if_away: false
+  icon:
+  mac: 00:07:A6:13:FB:D0
+  name: '*'
+  picture:
+  track: true
+
+88_de_a9_5e_ed_c3:
+  hide_if_away: false
+  icon:
+  mac: 88:DE:A9:5E:ED:C3
+  name: '*'
+  picture:
+  track: true
+
+09aa01af16190rht:
+  hide_if_away: false
+  icon:
+  mac: 64:16:66:9E:F4:24
+  name: 09AA01AF16190RHT
+  picture:
+  track: true
+
+d8_31_34_5f_c7_c2:
+  hide_if_away: false
+  icon:
+  mac: D8:31:34:5F:C7:C2
+  name: '*'
+  picture:
+  track: true
+
+00_1d_4b_f1_92_7a:
+  hide_if_away: false
+  icon:
+  mac: 00:1D:4B:F1:92:7A
+  name: '*'
+  picture:
+  track: true
+
+homemate_device:
+  hide_if_away: false
+  icon:
+  mac: A0:20:A6:05:C1:02
+  name: HomeMate device
+  picture:
+  track: true
+
+myq_f05:
+  hide_if_away: false
+  icon:
+  mac: 64:52:99:B9:3E:15
+  name: MyQ-F05
+  picture:
+  track: true
+
+myq_c94:
+  hide_if_away: false
+  icon:
+  mac: 64:52:99:B9:38:7D
+  name: MyQ-C94
+  picture:
+  track: true
+
+88_e7_12_19_89_2a:
+  hide_if_away: false
+  icon:
+  mac: 88:E7:12:19:89:2A
+  name: 88 e7 12 19 89 2a
+  picture:
+  track: true
+
+jacobs_iphone:
+  hide_if_away: false
+  icon:
+  mac: 14:D0:0D:AB:14:35
+  name: Jacobs-iPhone
+  picture:
+  track: true
+
+tanners_iphone:
+  hide_if_away: false
+  icon:
+  mac: C4:2A:D0:14:02:65
+  name: Tanners-iPhone
+  picture:
+  track: true
+
+localhost:
+  hide_if_away: false
+  icon:
+  mac: C0:97:27:3D:E1:68
+  name: localhost
+  picture:
+  track: true
+
+rachio:
+  icon:
+  mac: 00:9D:6B:BE:3F:AA
+  name: Rachio
+  picture:
+  track: true
+
+washer_plug:
+  icon:
+  mac: 50:C7:BF:C9:7D:28
+  name: Washer plug
+  picture:
+  track: true
+
+kitchen_echo_show:
+  icon:
+  mac: 1C:12:B0:2E:14:9D
+  name: Kitchen Echo Show
+  picture:
+  track: true
+
+0c_62_a6_1e_99_e2:
+  icon:
+  mac: 0C:62:A6:1E:99:E2
+  name: 0c_62_a6_1e_99_e2
+  picture:
+  track: true
+
+nancy_pc:
+  icon:
+  mac: 50:3E:AA:85:0B:63
+  name: Nancy PC
+  picture:
+  track: true
+
+basement_tv_echo:
+  icon:
+  mac: 3C:5C:C4:16:4E:C8
+  name: Basement TV Echo
+  picture:
+  track: true
+
+pi_zero_w:
+  icon:
+  mac: B8:27:EB:E2:3F:76
+  name: Pi Zero W
+  picture:
+  track: true
+
+nancy_ipad:
+  icon:
+  mac: E0:B5:5F:60:BC:00
+  name: Nancy iPad
+  picture:
+  track: true
+
+bailey_echo:
+  icon:
+  mac: 14:91:38:63:D7:32
+  name: Bailey Echo
+  picture:
+  track: true
+
+nancy_watch:
+  icon:
+  mac: E4:E0:A6:72:56:88
+  name: Nancy watch
+  picture:
+  track: true
+
+ring_pro:
+  icon:
+  mac: 08:3A:88:08:88:59
+  name: Ring Pro
+  picture:
+  track: true
+
+basement_playroom_echo:
+  icon:
+  mac: 3C:5C:C4:5E:28:A0
+  name: Basement playroom Echo
+  picture:
+  track: true
+
+caleb_echo:
+  icon:
+  mac: 14:91:38:F9:69:CE
+  name: Caleb Echo
+  picture:
+  track: true
+
+mytouchsmart_plug:
+  icon:
+  mac: 98:D8:63:84:6D:D4
+  name: MyTouchSmart plug
+  picture:
+  track: true
+
+master_bedroom_echo:
+  icon:
+  mac: 08:A6:BC:1E:30:F4
+  name: Master bedroom Echo
+  picture:
+  track: true
+
+switch:
+  icon:
+  mac: 7C:BB:8A:AD:98:9B
+  name: Switch
+  picture:
+  track: true
+
+annalee_echo:
+  icon:
+  mac: 14:91:38:A1:17:F8
+  name: Annalee Echo
+  picture:
+  track: true
+
+boys_echo:
+  icon:
+  mac: 14:91:38:19:F8:81
+  name: Boys Echo
+  picture:
+  track: true
+
+70_f0_87_6d_0d_25:
+  icon:
+  mac: 70:F0:87:6D:0D:25
+  name: 70_f0_87_6d_0d_25
+  picture:
+  track: true
+
+00_6b_9e_0b_7b_3f:
+  icon:
+  mac: 00:6B:9E:0B:7B:3F
+  name: 00_6b_9e_0b_7b_3f
+  picture:
+  track: true
+
+nancy_laptop:
+  icon:
+  mac: 9C:B6:D0:89:5E:9B
+  name: Nancy laptop
+  picture:
+  track: true
+
+xbox_one:
+  icon:
+  mac: 98:5F:D3:F3:53:9B
+  name: Xbox One
+  picture:
+  track: true
+
+desktop_computer:
+  icon:
+  mac: 9C:EF:D5:FF:F1:80
+  name: Desktop computer
+  picture:
+  track: true
+
+nate_watch:
+  icon:
+  mac: E4:E0:A6:8E:48:67
+  name: Nate watch
+  picture:
+  track: true
+
+ec_aa_25_ad_b9_84:
+  icon:
+  mac: EC:AA:25:AD:B9:84
+  name: ec_aa_25_ad_b9_84
+  picture:
+  track: true
+
+7c_61_66_f2_5f_71:
+  icon:
+  mac: 7C:61:66:F2:5F:71
+  name: 7c_61_66_f2_5f_71
+  picture:
+  track: true
+
+e8_fb_e9_f0_25_98:
+  icon:
+  mac: E8:FB:E9:F0:25:98
+  name: e8_fb_e9_f0_25_98
+  picture:
+  track: true
+
+14_ab_c5_7c_01_a5:
+  icon:
+  mac: 14:AB:C5:7C:01:A5
+  name: 14_ab_c5_7c_01_a5
+  picture:
+  track: true
+
+dc_53_60_8f_71_ea:
+  icon:
+  mac: DC:53:60:8F:71:EA
+  name: dc_53_60_8f_71_ea
+  picture:
+  track: true
+
+18_3d_a2_c8_4c_1d:
+  icon:
+  mac: 18:3D:A2:C8:4C:1D
+  name: 18_3d_a2_c8_4c_1d
+  picture:
+  track: true
+
+40_23_43_c5_18_95:
+  icon:
+  mac: 40:23:43:C5:18:95
+  name: 40_23_43_c5_18_95
+  picture:
+  track: true
+
+5c_41_5a_33_f6_c8:
+  icon:
+  mac: 5C:41:5A:33:F6:C8
+  name: 5c_41_5a_33_f6_c8
+  picture:
+  track: true
+
+taytum_phone:
+  icon:
+  mac: EC:5C:68:E6:72:27
+  name: Taytum phone
+  picture:
+  track: true
+
+02_c2_ee_ec_0b_b5:
+  icon:
+  mac: 02:C2:EE:EC:0B:B5
+  name: 02_c2_ee_ec_0b_b5
+  picture:
+  track: true
+
+jordan_tablet:
+  icon:
+  mac: 58:C5:CB:D9:66:19
+  name: Jordan tablet
+  picture:
+  track: true
+
+e8_e8_b7_65_97_0d:
+  icon:
+  mac: E8:E8:B7:65:97:0D
+  name: e8_e8_b7_65_97_0d
+  picture:
+  track: true
+
+taytum_laptop:
+  icon:
+  mac: 7C:7A:91:B2:75:C3
+  name: Taytum laptop
+  picture:
+  track: true
+
+julie_phone:
+  icon:
+  mac: 94:E9:6A:B8:DC:04
+  name: Julie phone
+  picture:
+  track: true
+
+wii_u:
+  icon:
+  mac: 9C:E6:35:36:2E:D0
+  name: Wii U
+  picture:
+  track: true
+
+00_6b_9e_12_17_0c:
+  icon:
+  mac: 00:6B:9E:12:17:0C
+  name: 00_6b_9e_12_17_0c
+  picture:
+  track: true
+
+f0_78_07_19_2b_e3:
+  icon:
+  mac: F0:78:07:19:2B:E3
+  name: f0_78_07_19_2b_e3
+  picture:
+  track: true
+
+08_d2_3e_7e_ec_44:
+  icon:
+  mac: 08:D2:3E:7E:EC:44
+  name: 08_d2_3e_7e_ec_44
+  picture:
+  track: true
+
+julie_tablet:
+  icon:
+  mac: 58:B1:0F:01:C4:46
+  name: Julie tablet
+  picture:
+  track: true
+
+f0_ee_10_35_74_2e:
+  icon:
+  mac: F0:EE:10:35:74:2E
+  name: f0_ee_10_35_74_2e
+  picture:
+  track: true
+
+dolly_phone:
+  icon:
+  mac: 40:9C:28:89:C3:49
+  name: Dolly phone
+  picture:
+  track: true
+
+ac_bc_32_16_58_2f:
+  icon:
+  mac: AC:BC:32:16:58:2F
+  name: ac_bc_32_16_58_2f
+  picture:
+  track: true
+
+family_iphone_5:
+  icon:
+  mac: A0:D7:95:01:FC:06
+  name: Family iPhone 5
+  picture:
+  track: true
+
+08_f6_9c_cc_45_5e:
+  icon:
+  mac: 08:F6:9C:CC:45:5E
+  name: 08_f6_9c_cc_45_5e
+  picture:
+  track: true
+
+88_66_a5_11_9d_60:
+  icon:
+  mac: 88:66:A5:11:9D:60
+  name: 88_66_a5_11_9d_60
+  picture:
+  track: true
+
+50_f5_da_4b_26_b4:
+  icon:
+  mac: 50:F5:DA:4B:26:B4
+  name: 50_f5_da_4b_26_b4
+  picture:
+  track: true
+
+tanner_kindle:
+  icon:
+  mac: 0C:47:C9:04:C5:F9
+  name: Tanner Kindle
+  picture:
+  track: true
+
+10_59_32_68_e5_b2:
+  icon:
+  mac: 10:59:32:68:E5:B2
+  name: 10_59_32_68_e5_b2
+  picture:
+  track: true
+
+4c_ef_c0_85_46_0e:
+  icon:
+  mac: 4C:EF:C0:85:46:0E
+  name: 4c_ef_c0_85_46_0e
+  picture:
+  track: true
+
+5c_3a_45_d4_84_c1:
+  icon:
+  mac: 5C:3A:45:D4:84:C1
+  name: 5c_3a_45_d4_84_c1
+  picture:
+  track: true
+
+34_e6_ad_3e_06_48:
+  icon:
+  mac: 34:E6:AD:3E:06:48
+  name: 34_e6_ad_3e_06_48
+  picture:
+  track: true
+
+80_2b_f9_ad_e5_79:
+  icon:
+  mac: 80:2B:F9:AD:E5:79
+  name: 80_2b_f9_ad_e5_79
+  picture:
+  track: true
+
+50_c7_bf_c7_d1_f3:
+  icon:
+  mac: 50:C7:BF:C7:D1:F3
+  name: 50_c7_bf_c7_d1_f3
+  picture:
+  track: true
+
+fc_a1_83_07_61_a5:
+  icon:
+  mac: FC:A1:83:07:61:A5
+  name: fc_a1_83_07_61_a5
+  picture:
+  track: true
+
+46_75_2c_de_db_8c:
+  icon:
+  mac: 46:75:2C:DE:DB:8C
+  name: 46_75_2c_de_db_8c
+  picture:
+  track: true
+
+d6_f5_ce_82_76_d9:
+  icon:
+  mac: D6:F5:CE:82:76:D9
+  name: d6_f5_ce_82_76_d9
+  picture:
+  track: true
+
+20_e8_74_49_b0_fa:
+  icon:
+  mac: 20:E8:74:49:B0:FA
+  name: 20_e8_74_49_b0_fa
+  picture:
+  track: true
+
+c2_d5_ac_42_f8_cd:
+  icon:
+  mac: C2:D5:AC:42:F8:CD
+  name: c2_d5_ac_42_f8_cd
+  picture:
+  track: true
+
+52_1e_d2_0b_8c_6d:
+  icon:
+  mac: 52:1E:D2:0B:8C:6D
+  name: 52_1e_d2_0b_8c_6d
+  picture:
+  track: true
+
+ba_64_29_e2_a6_f1:
+  icon:
+  mac: BA:64:29:E2:A6:F1
+  name: ba_64_29_e2_a6_f1
+  picture:
+  track: true
+
+12_91_d2_e5_88_03:
+  name: 12_91_d2_e5_88_03
+  mac: 12:91:D2:E5:88:03
+  icon:
+  picture:
+  track: true
+
+ba_ad_53_99_95_e2:
+  name: ba_ad_53_99_95_e2
+  mac: BA:AD:53:99:95:E2
+  icon:
+  picture:
+  track: true
+
+3a_49_10_b3_a4_5e:
+  name: 3a_49_10_b3_a4_5e
+  mac: 3A:49:10:B3:A4:5E
+  icon:
+  picture:
+  track: true

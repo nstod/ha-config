@@ -1,0 +1,198 @@
+
+# Configure a default setup of Home Assistant (frontend, api, etc)
+default_config:
+
+frontend:
+  themes: !include_dir_merge_named themes
+
+# Uncomment this if you are using SSL/TLS, running in Docker container, etc.
+# http:
+#   base_url: example.duckdns.org:8123
+
+# Text to speech
+tts:
+  - platform: google_translate
+
+http:
+  base_url: http://nstod.com:8123
+
+group: !include groups.yaml
+automation: !include automations.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml
+
+device_tracker:
+  - platform: eero_tracker
+    interval_seconds: 30
+
+# Leviton lights
+light:
+  - platform: decora_wifi
+    username: !secret leviton_username
+    password: !secret leviton_password
+
+# Garage doors
+cover:
+  - platform: myq
+    username: !secret myq_username
+    password: !secret myq_password
+
+tplink:
+    discovery: true
+
+rachio:
+  api_key: !secret rachio_api_key
+
+badnest:
+  issue_token: !secret badnest_issue_token
+  cookie: !secret badnest_cookie
+  region: us
+
+climate:
+  - platform: badnest
+    scan_interval: 10
+
+sensor:
+  - platform: badnest
+  - platform: template
+    sensors:
+      home_assistant_plug_current:
+        friendly_name_template: "{{ states.switch.home_assistant.name}} Current"
+        value_template: '{{ states.switch.home_assistant.attributes["current_a"] | float }}'
+        unit_of_measurement: 'A'
+      home_assistant_plug_state:
+        friendly_name_template: "{{ states.switch.home_assistant.name}} State"
+        value_template: '{% if states.switch.home_assistant.attributes["current_power_w"] | float > 1.5 %} Running {% else %} Idle {% endif %}'
+      home_assistant_plug_power:
+        friendly_name_template: "{{ states.switch.home_assistant.name}} Current Consumption"
+        value_template: '{{ states.switch.home_assistant.attributes["current_power_w"] | float }}'
+        unit_of_measurement: 'W'
+      home_assistant_plug_total_consumption:
+        friendly_name_template: "{{ states.switch.home_assistant.name}} Total Consumption"
+        value_template: '{{ states.switch.home_assistant.attributes["total_energy_kwh"] | float }}'
+        unit_of_measurement: 'kWh'
+      home_assistant_plug_voltage:
+        friendly_name_template: "{{ states.switch.home_assistant.name}} Voltage"
+        value_template: '{{ states.switch.home_assistant.attributes["voltage"] | float }}'
+        unit_of_measurement: 'V'
+      home_assistant_plug_today_consumption:
+        friendly_name_template: "{{ states.switch.home_assistant.name}} Today's Consumption"
+        value_template: '{{ states.switch.home_assistant.attributes["today_energy_kwh"] | float }}'
+        unit_of_measurement: 'kWh'
+      washing_machine_current:
+        friendly_name_template: "{{ states.switch.washer.name}} Current"
+        value_template: '{{ states.switch.washer.attributes["current_a"] | float }}'
+        unit_of_measurement: 'A'
+      washing_machine_state:
+        friendly_name_template: "{{ states.switch.washer.name}} State"
+        value_template: '{% if states.switch.washer.attributes["current_power_w"] | float > 1.5 %} Running {% else %} Idle {% endif %}'
+      washing_machine_power:
+        friendly_name_template: "{{ states.switch.washer.name}} Current Consumption"
+        value_template: '{{ states.switch.washer.attributes["current_power_w"] | float }}'
+        unit_of_measurement: 'W'
+      washing_machine_total_consumption:
+        friendly_name_template: "{{ states.switch.washer.name}} Total Consumption"
+        value_template: '{{ states.switch.washer.attributes["total_energy_kwh"] | float }}'
+        unit_of_measurement: 'kWh'
+      washing_machine_voltage:
+        friendly_name_template: "{{ states.switch.washer.name}} Voltage"
+        value_template: '{{ states.switch.washer.attributes["voltage"] | float }}'
+        unit_of_measurement: 'V'
+      washing_machine_today_consumption:
+        friendly_name_template: "{{ states.switch.washer.name}} Today's Consumption"
+        value_template: '{{ states.switch.washer.attributes["today_energy_kwh"] | float }}'
+        unit_of_measurement: 'kWh'
+      front_yard_sprinkler:
+        friendly_name_template: "{{ states.switch.front_yard.name }}"
+        value_template: '{% if is_state("switch.front_yard", "on") %} 1 {% else %} 0 {% endif %}'
+        unit_of_measurement: 'State'
+      back_door_sprinkler:
+        friendly_name_template: "{{ states.switch.back_door.name }}"
+        value_template: '{% if is_state("switch.back_door", "on") %} 1 {% else %} 0 {% endif %}'
+        unit_of_measurement: 'State'
+      back_fence_sprinkler:
+        friendly_name_template: "{{ states.switch.back_fence.name }}"
+        value_template: '{% if is_state("switch.back_fence", "on") %} 1 {% else %} 0 {% endif %}'
+        unit_of_measurement: 'State'
+      drip_sprinkler:
+        friendly_name_template: "{{ states.switch.drip.name }}"
+        value_template: '{% if is_state("switch.drip", "on") %} 1 {% else %} 0 {% endif %}'
+        unit_of_measurement: 'State'
+      thermostat_current_temperature:
+        friendly_name_template: "{{ states.climate.living_room_thermostat.name}} Current Temp"
+        value_template: '{{states.climate.living_room_thermostat.attributes["current_temperature"] | float}}'
+        unit_of_measurement: '°F'
+      thermostat_cooling_temp:
+        friendly_name_template: "{{ states.climate.living_room_thermostat.name}} Cooling"
+        value_template: '{% if states.climate.living_room_thermostat.attributes["hvac_action"] == "cooling" %}{{states.climate.living_room_thermostat.attributes["current_temperature"] | float}}{% else %}0{% endif %}'
+        unit_of_measurement: '°F'
+      thermostat_heating_temp:
+        friendly_name_template: "{{ states.climate.living_room_thermostat.name}} Heating"
+        value_template: '{% if states.climate.living_room_thermostat.attributes["hvac_action"] == "heating" %}{{states.climate.living_room_thermostat.attributes["current_temperature"] | float}}{% else %}0{% endif %}'
+        unit_of_measurement: '°F'
+      thermostat_target_temp_high:
+        friendly_name_template: "{{ states.climate.living_room_thermostat.name}} Target Temp High"
+        value_template: '{% if states.climate.living_room_thermostat.attributes["temperature"] != None %}{{ states.climate.living_room_thermostat.attributes["temperature"] | float }}{% else %}{{ states.climate.living_room_thermostat.attributes["target_temp_high"] | float }}{% endif %}'
+        unit_of_measurement: '°F'
+      thermostat_target_temp_low:
+        friendly_name_template: "{{ states.climate.living_room_thermostat.name}} Target Temp Low"
+        value_template: '{% if states.climate.living_room_thermostat.attributes["temperature"] != None %}{{ states.climate.living_room_thermostat.attributes["temperature"] | float }}{% else %}{{ states.climate.living_room_thermostat.attributes["target_temp_low"] | float }}{% endif %}'
+        unit_of_measurement: '°F'
+  - platform: statistics
+    entity_id: sensor.owm_temperature
+    name: 'Outside temp stats'
+    sampling_size: 2880
+    max_age:
+      hours: 24
+  - platform: statistics
+    entity_id: sensor.thermostat_current_temperature
+    name: 'Inside temp stats'
+    sampling_size: 2880
+    max_age:
+      hours: 24
+  - platform: statistics
+    entity_id: sensor.thermostat_target_temp_high
+    name: 'Inside high target temp stats'
+    sampling_size: 2880
+    max_age:
+      hours: 24
+  - platform: statistics
+    entity_id: sensor.thermostat_target_temp_low
+    name: 'Inside low target temp stats'
+    sampling_size: 2880
+    max_age:
+      hours: 24
+  - platform: aquahawk
+    resource: https://sterco.aquahawk.us
+    value_template: '{{ value_json.meters[0].metricAggregates.waterUseActual.current["1 hour"].gallons }}'
+    unit_of_measurement: gallons
+    username: !secret aquahawk_username
+    password: !secret aquahawk_password
+    name: Water Meter
+    headers:
+      accept: application/json
+      Content-Type: application/x-www-form-urlencoded
+  - platform: aquahawk
+    resource: https://sterco.aquahawk.us
+    value_template: '{{ value_json.meters[0].metricAggregates.waterUseActual.current["billing period"].gallons }}'
+    unit_of_measurement: gallons
+    username: !secret aquahawk_username
+    password: !secret aquahawk_password
+    name: Water Meter Current Month
+    headers:
+      accept: application/json
+      Content-Type: application/x-www-form-urlencoded
+  - platform: aquahawk
+    resource: https://sterco.aquahawk.us
+    value_template: '{{ value_json.meters[0].metricAggregates.waterUse.projected["billing period"].gallons }}'
+    unit_of_measurement: gallons
+    username: !secret aquahawk_username
+    password: !secret aquahawk_password
+    name: Water Meter Projected
+    headers:
+      accept: application/json
+      Content-Type: application/x-www-form-urlencoded
+
+weather:
+  - platform: openweathermap
+    api_key: !secret openweathermap_api_key

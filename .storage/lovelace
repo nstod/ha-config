@@ -1,0 +1,1048 @@
+{
+    "version": 1,
+    "key": "lovelace",
+    "data": {
+        "config": {
+            "title": "Home",
+            "views": [
+                {
+                    "title": "Floorplan",
+                    "path": "floorplan",
+                    "icon": "mdi:home",
+                    "badges": [],
+                    "cards": [
+                        {
+                            "type": "picture-elements",
+                            "image": "/local/floorplan3d/main_floor.png",
+                            "elements": [
+                                {
+                                    "type": "image",
+                                    "entity": "light.front_door",
+                                    "tap_action": "none",
+                                    "hold_action": "none",
+                                    "state_image": {
+                                        "on": "/local/floorplan3d/front_porch_on.png",
+                                        "off": "/local/floorplan3d/transparent_square.png"
+                                    },
+                                    "style": {
+                                        "top": "50%",
+                                        "left": "50%",
+                                        "width": "100%"
+                                    }
+                                },
+                                {
+                                    "type": "image",
+                                    "entity": "light.back_door",
+                                    "tap_action": "none",
+                                    "hold_action": "none",
+                                    "state_image": {
+                                        "on": "/local/floorplan3d/back_porch_on.png",
+                                        "off": "/local/floorplan3d/transparent_square.png"
+                                    },
+                                    "style": {
+                                        "top": "50%",
+                                        "left": "50%",
+                                        "width": "100%"
+                                    }
+                                },
+                                {
+                                    "type": "image",
+                                    "entity": "media_player.samsung_un50ku630d",
+                                    "tap_action": "none",
+                                    "hold_action": "none",
+                                    "state_image": {
+                                        "on": "/local/floorplan3d/living_room_tv_on.png",
+                                        "off": "/local/floorplan3d/transparent_square.png"
+                                    },
+                                    "style": {
+                                        "top": "50%",
+                                        "left": "50%",
+                                        "width": "100%"
+                                    }
+                                },
+                                {
+                                    "type": "image",
+                                    "entity": "remote.roku_tv",
+                                    "tap_action": "none",
+                                    "hold_action": "none",
+                                    "state_image": {
+                                        "on": "/local/floorplan3d/office_tv_on.png",
+                                        "off": "/local/floorplan3d/transparent_square.png"
+                                    },
+                                    "style": {
+                                        "top": "50%",
+                                        "left": "50%",
+                                        "width": "100%"
+                                    }
+                                },
+                                {
+                                    "type": "image",
+                                    "entity": "cover.2_car_garage",
+                                    "tap_action": "none",
+                                    "hold_action": "none",
+                                    "state_image": {
+                                        "open": "/local/floorplan3d/2_car_garage_open.png",
+                                        "opening": "/local/floorplan3d/2_car_garage_open.png",
+                                        "closing": "/local/floorplan3d/transparent_square.png",
+                                        "closed": "/local/floorplan3d/transparent_square.png"
+                                    },
+                                    "style": {
+                                        "top": "50%",
+                                        "left": "50%",
+                                        "width": "100%"
+                                    }
+                                },
+                                {
+                                    "type": "image",
+                                    "entity": "cover.third_car_garage",
+                                    "tap_action": "none",
+                                    "hold_action": "none",
+                                    "state_image": {
+                                        "open": "/local/floorplan3d/3_car_garage_open.png",
+                                        "opening": "/local/floorplan3d/3_car_garage_open.png",
+                                        "closing": "/local/floorplan3d/transparent_square.png",
+                                        "closed": "/local/floorplan3d/transparent_square.png"
+                                    },
+                                    "style": {
+                                        "top": "50%",
+                                        "left": "50%",
+                                        "width": "100%"
+                                    }
+                                },
+                                {
+                                    "type": "state-label",
+                                    "entity": "sensor.thermostat_current_temperature",
+                                    "style": {
+                                        "top": "32%",
+                                        "left": "44%",
+                                        "color": "#000",
+                                        "border-radius": "50%",
+                                        "text-align": "center",
+                                        "background-color": "rgba(255, 255, 255, 0.3)",
+                                        "font-size": "11px",
+                                        "font-weight": "bold"
+                                    }
+                                },
+                                {
+                                    "type": "image",
+                                    "entity": "light.front_door",
+                                    "tap_action": {
+                                        "action": "toggle"
+                                    },
+                                    "image": "/local/floorplan3d/transparent_square_small.png",
+                                    "style": {
+                                        "top": "35%",
+                                        "left": "73%"
+                                    }
+                                },
+                                {
+                                    "type": "image",
+                                    "entity": "light.back_door",
+                                    "tap_action": {
+                                        "action": "toggle"
+                                    },
+                                    "image": "/local/floorplan3d/transparent_square_small.png",
+                                    "style": {
+                                        "top": "52%",
+                                        "left": "17%"
+                                    }
+                                },
+                                {
+                                    "type": "image",
+                                    "entity": "media_player.samsung_un50ku630d",
+                                    "tap_action": {
+                                        "action": "toggle"
+                                    },
+                                    "image": "/local/floorplan3d/transparent_square_small.png",
+                                    "style": {
+                                        "top": "23%",
+                                        "left": "33%"
+                                    }
+                                },
+                                {
+                                    "type": "image",
+                                    "entity": "remote.roku_tv",
+                                    "tap_action": {
+                                        "action": "toggle"
+                                    },
+                                    "image": "/local/floorplan3d/transparent_square_small.png",
+                                    "style": {
+                                        "top": "23%",
+                                        "left": "60%"
+                                    }
+                                },
+                                {
+                                    "type": "image",
+                                    "entity": "cover.2_car_garage",
+                                    "tap_action": {
+                                        "action": "toggle"
+                                    },
+                                    "image": "/local/floorplan3d/transparent_square_small.png",
+                                    "style": {
+                                        "top": "60%",
+                                        "left": "84%"
+                                    }
+                                },
+                                {
+                                    "type": "image",
+                                    "entity": "cover.third_car_garage",
+                                    "tap_action": {
+                                        "action": "toggle"
+                                    },
+                                    "image": "/local/floorplan3d/transparent_square_small.png",
+                                    "style": {
+                                        "top": "87%",
+                                        "left": "84%"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "picture-elements",
+                            "image": "/local/floorplan3d/upstairs.png",
+                            "elements": [
+                                {
+                                    "type": "image",
+                                    "entity": "light.master_bedroom",
+                                    "tap_action": "none",
+                                    "hold_action": "none",
+                                    "state_image": {
+                                        "on": "/local/floorplan3d/master_on.png",
+                                        "off": "/local/floorplan3d/master_off.png"
+                                    },
+                                    "style": {
+                                        "top": "50%",
+                                        "left": "50%",
+                                        "width": "100%"
+                                    }
+                                },
+                                {
+                                    "type": "image",
+                                    "entity": "media_player.samsung_un50ku6300",
+                                    "tap_action": "none",
+                                    "hold_action": "none",
+                                    "state_image": {
+                                        "on": "/local/floorplan3d/master_tv_on.png",
+                                        "off": "/local/floorplan3d/transparent_square.png"
+                                    },
+                                    "style": {
+                                        "top": "50%",
+                                        "left": "50%",
+                                        "width": "100%"
+                                    }
+                                },
+                                {
+                                    "type": "conditional",
+                                    "conditions": [
+                                        {
+                                            "entity": "sensor.washing_machine_state",
+                                            "state": "Running"
+                                        }
+                                    ],
+                                    "elements": [
+                                        {
+                                            "type": "state-label",
+                                            "entity": "sensor.washing_machine_state",
+                                            "style": {
+                                                "top": "35%",
+                                                "left": "68%",
+                                                "color": "#000",
+                                                "border-radius": "50%",
+                                                "text-align": "center",
+                                                "background-color": "rgba(0, 255, 0, 0.3)",
+                                                "font-size": "11px",
+                                                "font-weight": "bold"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "conditional",
+                                    "conditions": [
+                                        {
+                                            "entity": "sensor.washing_machine_state",
+                                            "state": "Idle"
+                                        }
+                                    ],
+                                    "elements": [
+                                        {
+                                            "type": "state-label",
+                                            "entity": "sensor.washing_machine_state",
+                                            "style": {
+                                                "top": "35%",
+                                                "left": "68%",
+                                                "color": "#000",
+                                                "border-radius": "50%",
+                                                "text-align": "center",
+                                                "background-color": "rgba(255, 255, 255, 0.3)",
+                                                "font-size": "11px",
+                                                "font-weight": "bold"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "image",
+                                    "entity": "light.master_bedroom",
+                                    "tap_action": {
+                                        "action": "toggle"
+                                    },
+                                    "image": "/local/floorplan3d/transparent_square_small.png",
+                                    "style": {
+                                        "top": "23.5%",
+                                        "left": "26.5%"
+                                    }
+                                },
+                                {
+                                    "type": "image",
+                                    "entity": "media_player.samsung_un50ku6300",
+                                    "tap_action": {
+                                        "action": "toggle"
+                                    },
+                                    "image": "/local/floorplan3d/transparent_square_small.png",
+                                    "style": {
+                                        "top": "35%",
+                                        "left": "22%"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "picture-elements",
+                            "image": "/local/floorplan3d/basement.png",
+                            "elements": [
+                                {
+                                    "type": "state-label",
+                                    "entity": "sensor.home_assistant_plug_power",
+                                    "style": {
+                                        "top": "85%",
+                                        "left": "51%",
+                                        "color": "#000",
+                                        "border-radius": "50%",
+                                        "text-align": "center",
+                                        "background-color": "rgba(255, 255, 255, 0.3)",
+                                        "font-size": "11px",
+                                        "font-weight": "bold"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "cards": [
+                        {
+                            "config": {
+                                "image": "/local/floorplan/house/main_floor.svg?v=1.1.14",
+                                "rules": [
+                                    {
+                                        "entities": [
+                                            "light.front_door",
+                                            "light.back_door",
+                                            "climate.living_room_thermostat",
+                                            "cover.2_car_garage",
+                                            "cover.third_car_garage",
+                                            "media_player.office",
+                                            "media_player.kitchen"
+                                        ],
+                                        "states": [
+                                            {
+                                                "class": "binary-sensor-off",
+                                                "state": "off"
+                                            },
+                                            {
+                                                "class": "binary-sensor-on",
+                                                "state": "on"
+                                            },
+                                            {
+                                                "class": "cover-opened",
+                                                "state": "open"
+                                            },
+                                            {
+                                                "class": "cover-closed",
+                                                "state": "closed"
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "stylesheet": "/local/floorplan/house/house.css?v=1.1.14"
+                            },
+                            "title": "Main Floor",
+                            "type": "custom:floorplan-card"
+                        },
+                        {
+                            "config": {
+                                "image": "/local/floorplan/house/upper_floor.svg?v=1.1.14",
+                                "rules": [
+                                    {
+                                        "entities": [
+                                            "light.master_bedroom",
+                                            "sensor.washing_machine_state",
+                                            "media_player.master",
+                                            "media_player.caleb",
+                                            "media_player.bailey",
+                                            "media_player.boys",
+                                            "media_player.annalee"
+                                        ],
+                                        "states": [
+                                            {
+                                                "class": "binary-sensor-off",
+                                                "state": "off"
+                                            },
+                                            {
+                                                "class": "binary-sensor-on",
+                                                "state": "on"
+                                            },
+                                            {
+                                                "class": "binary-sensor-running",
+                                                "state": "Running"
+                                            },
+                                            {
+                                                "class": "binary-sensor-off",
+                                                "state": "Idle"
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "stylesheet": "/local/floorplan/house/house.css?v=1.1.14"
+                            },
+                            "title": "Upper Floor",
+                            "type": "custom:floorplan-card"
+                        },
+                        {
+                            "config": {
+                                "image": "/local/floorplan/house/lower_floor.svg?v=1.1.14",
+                                "rules": [
+                                    {
+                                        "entities": [
+                                            "switch.home_assistant",
+                                            "media_player.basement",
+                                            "media_player.basement_playroom"
+                                        ],
+                                        "states": [
+                                            {
+                                                "class": "binary-sensor-off",
+                                                "state": "off"
+                                            },
+                                            {
+                                                "class": "binary-sensor-running",
+                                                "state": "on"
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "stylesheet": "/local/floorplan/house/house.css?v=1.1.14"
+                            },
+                            "title": "Lower Floor",
+                            "type": "custom:floorplan-card"
+                        }
+                    ],
+                    "icon": "mdi:floor-plan",
+                    "id": "system",
+                    "title": "House"
+                },
+                {
+                    "icon": "mdi:home-assistant",
+                    "path": "default_view",
+                    "title": "Home",
+                    "badges": [
+                        {
+                            "entity": "person.nate"
+                        },
+                        {
+                            "entity": "sensor.washing_machine_power"
+                        },
+                        {
+                            "entity": "sensor.home_assistant_plug_power"
+                        }
+                    ],
+                    "cards": [
+                        {
+                            "entities": [
+                                "cover.third_car_garage",
+                                "cover.2_car_garage"
+                            ],
+                            "title": "Garage",
+                            "type": "entities"
+                        },
+                        {
+                            "entity": "alarm_control_panel.alexa_guard_f4587",
+                            "type": "alarm-panel"
+                        },
+                        {
+                            "entities": [
+                                "light.front_door",
+                                "light.back_door",
+                                "light.master_bedroom"
+                            ],
+                            "title": "Light",
+                            "type": "entities"
+                        },
+                        {
+                            "entity": "sensor.front_door_battery",
+                            "type": "custom:battery-entity"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.home_assistant_plug_power",
+                                    "name": "Power"
+                                },
+                                {
+                                    "entity": "sensor.home_assistant_plug_current",
+                                    "name": "Current"
+                                },
+                                {
+                                    "entity": "sensor.home_assistant_plug_today_consumption",
+                                    "name": "Today"
+                                },
+                                {
+                                    "entity": "sensor.home_assistant_plug_total_consumption",
+                                    "name": "Total"
+                                }
+                            ],
+                            "title": "Home Assistant",
+                            "type": "glance"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.home_assistant_plug_power"
+                                }
+                            ],
+                            "hours_to_show": 24,
+                            "refresh_interval": 0,
+                            "title": "Home Assistant Power",
+                            "type": "history-graph"
+                        }
+                    ]
+                },
+                {
+                    "badges": [],
+                    "cards": [
+                        {
+                            "card": {
+                                "entities": [
+                                    {
+                                        "color": "blue",
+                                        "entity": "sensor.thermostat_target_temp_high",
+                                        "name": "Cooling Temp",
+                                        "show_fill": false
+                                    },
+                                    {
+                                        "color": "red",
+                                        "entity": "sensor.thermostat_target_temp_low",
+                                        "name": "Heating Temp",
+                                        "show_fill": false
+                                    },
+                                    {
+                                        "color": "red",
+                                        "entity": "sensor.thermostat_heating_temp",
+                                        "name": "Heating",
+                                        "show_legend": false,
+                                        "show_points": false
+                                    },
+                                    {
+                                        "color": "aqua",
+                                        "entity": "sensor.thermostat_cooling_temp",
+                                        "name": "Cooling",
+                                        "show_legend": false,
+                                        "show_points": false
+                                    },
+                                    {
+                                        "color": "yellow",
+                                        "entity": "sensor.thermostat_current_temperature",
+                                        "name": "Inside",
+                                        "show_fill": false
+                                    },
+                                    {
+                                        "color": "green",
+                                        "entity": "sensor.owm_temperature",
+                                        "name": "Outside",
+                                        "show_fill": false
+                                    }
+                                ],
+                                "height": 300,
+                                "hours_to_show": 24,
+                                "line_width": 2,
+                                "lower_bound": "${Math.min(states['sensor.outside_temp_stats'].attributes['min_value'], states['sensor.inside_low_target_temp_stats'].attributes['min_value'], states['sensor.inside_temp_stats'].attributes['min_value'])}",
+                                "name": "House Temperature",
+                                "points_per_hour": 10,
+                                "show": {
+                                    "labels": true,
+                                    "points": false,
+                                    "state": false
+                                },
+                                "type": "custom:mini-graph-card",
+                                "upper_bound": "${Math.max(states['sensor.outside_temp_stats'].attributes['max_value'], states['sensor.inside_high_target_temp_stats'].attributes['max_value'], states['sensor.inside_temp_stats'].attributes['max_value'])}"
+                            },
+                            "entities": [
+                                "sensor.thermostat_target_temp_high",
+                                "sensor.thermostat_target_temp_low",
+                                "sensor.thermostat_heating_temp",
+                                "sensor.thermostat_cooling_temp",
+                                "sensor.thermostat_current_temperature",
+                                "sensor.owm_temperature",
+                                "sensor.inside_temp_stats",
+                                "sensor.inside_high_target_temp_stats",
+                                "sensor.inside_low_target_temp_stats",
+                                "sensor.outside_temp_stats"
+                            ],
+                            "type": "custom:config-template-card",
+                            "variables": [
+                                "states['sensor.inside_temp_stats'].attributes['min_value']",
+                                "states['sensor.inside_temp_stats'].attributes['max_value']",
+                                "states['sensor.inside_high_target_temp_stats'].attributes['min_value']",
+                                "states['sensor.inside_high_target_temp_stats'].attributes['max_value']",
+                                "states['sensor.inside_low_target_temp_stats'].attributes['min_value']",
+                                "states['sensor.inside_low_target_temp_stats'].attributes['max_value']",
+                                "states['sensor.outside_temp_stats'].attributes['min_value']",
+                                "states['sensor.outside_temp_stats'].attributes['max_value']"
+                            ]
+                        },
+                        {
+                            "entity": "weather.openweathermap",
+                            "type": "weather-forecast"
+                        },
+                        {
+                            "entity": "climate.living_room_thermostat",
+                            "name": "Nest",
+                            "type": "thermostat"
+                        }
+                    ],
+                    "icon": "mdi:home-thermometer-outline",
+                    "path": "comfort",
+                    "title": "Comfort"
+                },
+                {
+                    "badges": [],
+                    "cards": [
+                        {
+                            "entities": [
+                                {
+                                    "entity": "switch.front_yard"
+                                },
+                                {
+                                    "entity": "switch.back_door"
+                                },
+                                {
+                                    "entity": "switch.back_fence"
+                                },
+                                {
+                                    "entity": "switch.drip"
+                                },
+                                {
+                                    "entity": "binary_sensor.home_controller_online"
+                                }
+                            ],
+                            "title": "Home Controller",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.front_yard_sprinkler"
+                                },
+                                {
+                                    "entity": "sensor.back_door_sprinkler"
+                                },
+                                {
+                                    "entity": "sensor.back_fence_sprinkler"
+                                },
+                                {
+                                    "entity": "sensor.drip_sprinkler"
+                                }
+                            ],
+                            "icon": "mdi:sprinkler-variant",
+                            "line_width": 1,
+                            "lower_bound": 0,
+                            "name": "Sprinklers",
+                            "points_per_hour": 60,
+                            "show": {
+                                "points": false,
+                                "state": false
+                            },
+                            "type": "custom:mini-graph-card",
+                            "upper_bound": 1
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "aggregate_func": "max",
+                                    "entity": "sensor.water_meter"
+                                }
+                            ],
+                            "icon": "mdi:cup-water",
+                            "show": {
+                                "graph": "bar",
+                                "labels": true
+                            },
+                            "type": "custom:mini-graph-card"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.water_meter_current_month",
+                                    "icon": "mdi:cup-water"
+                                },
+                                {
+                                    "entity": "sensor.water_meter_projected",
+                                    "icon": "mdi:calendar-question"
+                                }
+                            ],
+                            "show_icon": true,
+                            "type": "glance"
+                        }
+                    ],
+                    "icon": "mdi:sprinkler-variant",
+                    "path": "sprinklers",
+                    "title": "Sprinklers"
+                },
+                {
+                    "cards": [
+                        {
+                            "entities": [
+                                "switch.annalee_do_not_disturb_switch",
+                                {
+                                    "artwork": "cover",
+                                    "entity": "media_player.annalee",
+                                    "hide": {
+                                        "icon": true,
+                                        "power": true,
+                                        "source": true
+                                    },
+                                    "type": "custom:mini-media-player"
+                                }
+                            ],
+                            "show_header_toggle": true,
+                            "title": "Annalee Bedroom",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                "switch.bailey_do_not_disturb_switch",
+                                {
+                                    "artwork": "cover",
+                                    "entity": "media_player.bailey",
+                                    "hide": {
+                                        "icon": true,
+                                        "power": true,
+                                        "source": true
+                                    },
+                                    "type": "custom:mini-media-player"
+                                }
+                            ],
+                            "show_header_toggle": true,
+                            "title": "Bailey Bedroom",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                "switch.boys_do_not_disturb_switch",
+                                {
+                                    "artwork": "cover",
+                                    "entity": "media_player.boys",
+                                    "hide": {
+                                        "icon": true,
+                                        "power": true,
+                                        "source": true
+                                    },
+                                    "type": "custom:mini-media-player"
+                                }
+                            ],
+                            "show_header_toggle": true,
+                            "title": "Boys Bedroom",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                "switch.caleb_do_not_disturb_switch",
+                                {
+                                    "artwork": "cover",
+                                    "entity": "media_player.caleb",
+                                    "hide": {
+                                        "icon": true,
+                                        "power": true,
+                                        "source": true
+                                    },
+                                    "type": "custom:mini-media-player"
+                                }
+                            ],
+                            "show_header_toggle": true,
+                            "title": "Caleb Bedroom",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                "switch.kitchen_do_not_disturb_switch",
+                                "sensor.kitchen_next_timer",
+                                {
+                                    "artwork": "cover",
+                                    "entity": "media_player.kitchen",
+                                    "hide": {
+                                        "icon": true,
+                                        "power": true,
+                                        "source": true
+                                    },
+                                    "type": "custom:mini-media-player"
+                                }
+                            ],
+                            "show_header_toggle": true,
+                            "title": "Kitchen",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                "switch.master_do_not_disturb_switch",
+                                {
+                                    "artwork": "cover",
+                                    "entity": "media_player.master",
+                                    "hide": {
+                                        "icon": true,
+                                        "power": true,
+                                        "source": true
+                                    },
+                                    "type": "custom:mini-media-player"
+                                }
+                            ],
+                            "show_header_toggle": true,
+                            "title": "Master",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                "switch.basement_playroom_do_not_disturb_switch",
+                                "switch.basement_tv_do_not_disturb_switch",
+                                {
+                                    "artwork": "cover",
+                                    "entity": "media_player.basement_playroom",
+                                    "hide": {
+                                        "icon": true,
+                                        "power": true,
+                                        "source": true
+                                    },
+                                    "type": "custom:mini-media-player"
+                                },
+                                {
+                                    "artwork": "cover",
+                                    "entity": "media_player.basement_tv",
+                                    "hide": {
+                                        "icon": true,
+                                        "power": true,
+                                        "source": true
+                                    },
+                                    "type": "custom:mini-media-player"
+                                }
+                            ],
+                            "show_header_toggle": true,
+                            "title": "Basement",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                "switch.office_do_not_disturb_switch",
+                                {
+                                    "artwork": "cover",
+                                    "entity": "media_player.office",
+                                    "hide": {
+                                        "icon": true,
+                                        "power": true,
+                                        "source": true
+                                    },
+                                    "type": "custom:mini-media-player"
+                                }
+                            ],
+                            "show_header_toggle": true,
+                            "title": "Office",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "media_player.everywhere",
+                                    "group": true,
+                                    "hide": {
+                                        "info": true,
+                                        "power": true,
+                                        "volume": true
+                                    },
+                                    "type": "custom:mini-media-player"
+                                },
+                                {
+                                    "entity": "media_player.kitchen",
+                                    "group": true,
+                                    "hide": {
+                                        "controls": true,
+                                        "icon": true,
+                                        "info": true,
+                                        "power": true,
+                                        "progress": true,
+                                        "source": true
+                                    },
+                                    "type": "custom:mini-media-player"
+                                },
+                                {
+                                    "entity": "media_player.master",
+                                    "group": true,
+                                    "hide": {
+                                        "controls": true,
+                                        "icon": true,
+                                        "info": true,
+                                        "power": true,
+                                        "progress": true,
+                                        "source": true
+                                    },
+                                    "type": "custom:mini-media-player"
+                                },
+                                {
+                                    "entity": "media_player.caleb",
+                                    "group": true,
+                                    "hide": {
+                                        "controls": true,
+                                        "icon": true,
+                                        "info": true,
+                                        "power": true,
+                                        "progress": true,
+                                        "source": true
+                                    },
+                                    "type": "custom:mini-media-player"
+                                },
+                                {
+                                    "entity": "media_player.bailey",
+                                    "group": true,
+                                    "hide": {
+                                        "controls": true,
+                                        "icon": true,
+                                        "info": true,
+                                        "power": true,
+                                        "progress": true,
+                                        "source": true
+                                    },
+                                    "type": "custom:mini-media-player"
+                                },
+                                {
+                                    "entity": "media_player.boys",
+                                    "group": true,
+                                    "hide": {
+                                        "controls": true,
+                                        "icon": true,
+                                        "info": true,
+                                        "power": true,
+                                        "progress": true,
+                                        "source": true
+                                    },
+                                    "type": "custom:mini-media-player"
+                                },
+                                {
+                                    "entity": "media_player.annalee",
+                                    "group": true,
+                                    "hide": {
+                                        "controls": true,
+                                        "icon": true,
+                                        "info": true,
+                                        "power": true,
+                                        "progress": true,
+                                        "source": true
+                                    },
+                                    "type": "custom:mini-media-player"
+                                },
+                                {
+                                    "entity": "media_player.office",
+                                    "group": true,
+                                    "hide": {
+                                        "controls": true,
+                                        "icon": true,
+                                        "info": true,
+                                        "power": true,
+                                        "progress": true,
+                                        "source": true
+                                    },
+                                    "type": "custom:mini-media-player"
+                                },
+                                {
+                                    "entity": "media_player.basement_playroom",
+                                    "group": true,
+                                    "hide": {
+                                        "controls": true,
+                                        "icon": true,
+                                        "info": true,
+                                        "power": true,
+                                        "progress": true,
+                                        "source": true
+                                    },
+                                    "type": "custom:mini-media-player"
+                                },
+                                {
+                                    "entity": "media_player.basement_tv",
+                                    "group": true,
+                                    "hide": {
+                                        "controls": true,
+                                        "icon": true,
+                                        "info": true,
+                                        "power": true,
+                                        "progress": true,
+                                        "source": true
+                                    },
+                                    "type": "custom:mini-media-player"
+                                }
+                            ],
+                            "type": "entities"
+                        }
+                    ],
+                    "icon": "mdi:amazon-alexa",
+                    "path": "alexa",
+                    "title": "Alexa"
+                },
+                {
+                    "badges": [],
+                    "cards": [
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.washing_machine_power",
+                                    "name": "Power"
+                                },
+                                {
+                                    "entity": "sensor.washing_machine_current",
+                                    "name": "Current"
+                                },
+                                {
+                                    "entity": "sensor.washing_machine_today_consumption",
+                                    "name": "Today"
+                                },
+                                {
+                                    "entity": "sensor.washing_machine_total_consumption",
+                                    "name": "Total"
+                                }
+                            ],
+                            "title": "Washer",
+                            "type": "glance"
+                        },
+                        {
+                            "entities": [
+                                "automation.notify_when_washing_machine_is_done",
+                                "switch.washer"
+                            ],
+                            "title": "Laundry",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.washing_machine_power"
+                                }
+                            ],
+                            "hours_to_show": 24,
+                            "refresh_interval": 0,
+                            "title": "Washer",
+                            "type": "history-graph"
+                        }
+                    ],
+                    "icon": "mdi:washing-machine",
+                    "path": "washer",
+                    "title": "Washer"
+                }
+            ]
+        }
+    }
+}

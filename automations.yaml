@@ -1,0 +1,50 @@
+- alias: "Notify when washing machine is done"
+  trigger:
+    platform: state
+    entity_id: sensor.washing_machine_state
+    from: 'Running'
+    to: 'Idle'
+    for:
+      seconds: 60
+  action:
+    - service: notify.alexa_media
+      data:
+        target:
+          - media_player.kitchen
+          - media_player.office
+          - media_player.master
+        title: "Washing machine finished"
+        data:
+          type: announce
+        message: "Washing machine is finished"
+    - service: notify.mobile_app_nates_iphone
+      data:
+        message: "Washing machine is finished"
+- alias: Restart HA
+  trigger:
+    platform: time
+    at: "03:30:00"
+  action:
+    - service: homeassistant.restart
+- alias: 'Set theme at startup'
+  initial_state: 'on'
+  trigger:
+   - platform: homeassistant
+     event: start
+  action:
+    service: frontend.set_theme
+    data:
+      name: slate
+
+#Nightly backup
+- alias: push HA configuration to GitHub repo
+  id: nightly_backup
+  trigger:
+  # Everyday at 23:23:23 time
+  - at: "23:23:23"
+    platform: time
+  action:
+  - data:
+      addon: a0d7b954_ssh
+      input: /config/ha_gitpush.sh
+    service: hassio.addon_stdin
