@@ -1,4 +1,6 @@
 {
+    "version": 1,
+    "key": "lovelace_resources",
     "data": {
         "items": [
             {
@@ -25,14 +27,7 @@
                 "id": "6ae172801f984ab886c466e50a5f8986",
                 "type": "module",
                 "url": "/hacsfiles/config-template-card/config-template-card.js"
-            },
-            {
-                "id": "28296b7afb3f4349b15c2107b2c794d4",
-                "type": "module",
-                "url": "/hacsfiles/custom-header/custom-header.js"
             }
         ]
-    },
-    "key": "lovelace_resources",
-    "version": 1
+    }
 }
