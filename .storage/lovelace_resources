@@ -27,6 +27,11 @@
                 "id": "6ae172801f984ab886c466e50a5f8986",
                 "type": "module",
                 "url": "/hacsfiles/config-template-card/config-template-card.js"
+            },
+            {
+                "url": "/hacsfiles/kiosk-mode/kiosk-mode.js",
+                "type": "module",
+                "id": "bc30d57f529d481788596ac50f2d1d14"
             }
         ]
     }
