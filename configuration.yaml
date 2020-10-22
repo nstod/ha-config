@@ -7,6 +7,7 @@ frontend:
 
 recorder:
   db_url: !secret db_url
+  commit_interval: 30
 
 # Uncomment this if you are using SSL/TLS, running in Docker container, etc.
 # http:
