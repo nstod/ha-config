@@ -5,9 +5,19 @@ default_config:
 frontend:
   themes: !include_dir_merge_named themes
 
-#recorder:
-#  db_url: !secret db_url
-#  commit_interval: 30
+recorder:
+  db_url: !secret db_url
+  commit_interval: 30
+  purge_keep_days: 5
+
+influxdb:
+  host: a0d7b954-influxdb
+  port: 8086
+  database: homeassistant
+  username: homeassistant
+  password: !secret influxdb_password
+  max_retries: 3
+  default_measurement: state
 
 # Uncomment this if you are using SSL/TLS, running in Docker container, etc.
 # http:
@@ -40,12 +50,6 @@ light:
   - platform: decora_wifi
     username: !secret leviton_username
     password: !secret leviton_password
-
-# Garage doors
-cover:
-  - platform: myq
-    username: !secret myq_username
-    password: !secret myq_password
 
 tplink:
     discovery: true
