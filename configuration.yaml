@@ -67,6 +67,13 @@ climate:
     scan_interval: 10
 
 sensor:
+  - platform: systemmonitor
+    resources:
+      - type: memory_use_percent
+      - type: load_1m
+      - type: processor_use
+      - type: processor_temperature
+      - type: disk_use_percent
   - platform: badnest
   - platform: template
     sensors:
@@ -119,29 +126,37 @@ sensor:
       front_yard_sprinkler:
         friendly_name_template: "{{ states.switch.front_yard.name }}"
         value_template: '{% if is_state("switch.front_yard", "on") %} 1 {% else %} 0 {% endif %}'
-        unit_of_measurement: 'State'
+        unit_of_measurement: 'state'
       back_door_sprinkler:
         friendly_name_template: "{{ states.switch.back_door.name }}"
         value_template: '{% if is_state("switch.back_door", "on") %} 1 {% else %} 0 {% endif %}'
-        unit_of_measurement: 'State'
+        unit_of_measurement: 'state'
       back_fence_sprinkler:
         friendly_name_template: "{{ states.switch.back_fence.name }}"
         value_template: '{% if is_state("switch.back_fence", "on") %} 1 {% else %} 0 {% endif %}'
-        unit_of_measurement: 'State'
+        unit_of_measurement: 'state'
       drip_sprinkler:
         friendly_name_template: "{{ states.switch.drip.name }}"
         value_template: '{% if is_state("switch.drip", "on") %} 1 {% else %} 0 {% endif %}'
-        unit_of_measurement: 'State'
+        unit_of_measurement: 'state'
+      thermostat_heating:
+        friendly_name_template: "{{ states.climate.living_room_thermostat.name}} Heating"
+        value_template: '{% if states.climate.living_room_thermostat.attributes["hvac_action"] == "heating" %} "on" {% else %} "off" {% endif %}'
+        unit_of_measurement: 'state'
+      thermostat_cooling:
+        friendly_name_template: "{{ states.climate.living_room_thermostat.name}} Cooling"
+        value_template: '{% if states.climate.living_room_thermostat.attributes["hvac_action"] == "cooling" %} "on" {% else %} "off" {% endif %}'
+        unit_of_measurement: 'state'
       thermostat_current_temperature:
         friendly_name_template: "{{ states.climate.living_room_thermostat.name}} Current Temp"
         value_template: '{{states.climate.living_room_thermostat.attributes["current_temperature"] | float}}'
         unit_of_measurement: '°F'
       thermostat_cooling_temp:
-        friendly_name_template: "{{ states.climate.living_room_thermostat.name}} Cooling"
+        friendly_name_template: "{{ states.climate.living_room_thermostat.name}} Cooling Temp"
         value_template: '{% if states.climate.living_room_thermostat.attributes["hvac_action"] == "cooling" %}{{states.climate.living_room_thermostat.attributes["current_temperature"] | float}}{% else %}0{% endif %}'
         unit_of_measurement: '°F'
       thermostat_heating_temp:
-        friendly_name_template: "{{ states.climate.living_room_thermostat.name}} Heating"
+        friendly_name_template: "{{ states.climate.living_room_thermostat.name}} Heating Temp"
         value_template: '{% if states.climate.living_room_thermostat.attributes["hvac_action"] == "heating" %}{{states.climate.living_room_thermostat.attributes["current_temperature"] | float}}{% else %}0{% endif %}'
         unit_of_measurement: '°F'
       thermostat_target_temp_high:
