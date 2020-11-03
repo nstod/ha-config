@@ -686,3 +686,10 @@ a6_bd_a6_c5_af_78:
   icon:
   picture:
   track: true
+
+julie_laptop:
+  name: Julie laptop
+  mac: 5A:00:2A:A3:0B:4F
+  icon:
+  picture:
+  track: true
