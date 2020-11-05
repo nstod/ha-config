@@ -693,3 +693,45 @@ julie_laptop:
   icon:
   picture:
   track: true
+
+ea_43_58_30_8f_57:
+  name: ea_43_58_30_8f_57
+  mac: EA:43:58:30:8F:57
+  icon:
+  picture:
+  track: true
+
+front_porch_light:
+  name: Front Porch Light
+  mac: 50:02:91:0D:C8:C0
+  icon:
+  picture:
+  track: true
+
+de_d8_6a_80_4a_c8:
+  name: de_d8_6a_80_4a_c8
+  mac: DE:D8:6A:80:4A:C8
+  icon:
+  picture:
+  track: true
+
+b8_f0_09_01_3d_2f:
+  name: b8_f0_09_01_3d_2f
+  mac: B8:F0:09:01:3D:2F
+  icon:
+  picture:
+  track: true
+
+50_02_91_0f_f0_8e:
+  name: 50_02_91_0f_f0_8e
+  mac: 50:02:91:0F:F0:8E
+  icon:
+  picture:
+  track: true
+
+50_02_91_15_82_e2:
+  name: 50_02_91_15_82_e2
+  mac: 50:02:91:15:82:E2
+  icon:
+  picture:
+  track: true

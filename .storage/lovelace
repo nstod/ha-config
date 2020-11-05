@@ -402,6 +402,25 @@
                             "refresh_interval": 0,
                             "title": "Home Assistant Power",
                             "type": "history-graph"
+                        },
+                        {
+                            "type": "entities",
+                            "entities": [
+                                {
+                                    "entity": "light.260565305002911582e2"
+                                },
+                                {
+                                    "entity": "light.233186405002910ff08e"
+                                },
+                                {
+                                    "entity": "light.26056530b8f009013d2f"
+                                },
+                                {
+                                    "entity": "light.260565305002910dc8c0"
+                                }
+                            ],
+                            "title": "Front Lights",
+                            "state_color": true
                         }
                     ]
                 },

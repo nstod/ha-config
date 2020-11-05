@@ -32,6 +32,11 @@
                 "url": "/hacsfiles/kiosk-mode/kiosk-mode.js",
                 "type": "module",
                 "id": "bc30d57f529d481788596ac50f2d1d14"
+            },
+            {
+                "url": "/hacsfiles/rgb-light-card/card.js",
+                "type": "module",
+                "id": "e50ea87b510241389e843211e2757f72"
             }
         ]
     }
