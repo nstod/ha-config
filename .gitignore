@@ -34,6 +34,7 @@ home-assistant.log
 !www/floorplan3d/
 !www/floorplan3d/*
 !.storage/
+!.storage/lovelace
 !.storage/lovelace*
 !custom_components/
 !custom_components/aquahawk/

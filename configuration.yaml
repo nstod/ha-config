@@ -6,23 +6,9 @@ frontend:
   themes: !include_dir_merge_named themes
 
 recorder:
-  db_url: !secret db_url
-  commit_interval: 30
+  #db_url: !secret db_url
+  commit_interval: 5
   purge_keep_days: 5
-  include:
-    domains:
-      - sensor
-      - binary_sensor
-      - switch
-      - light
-      - device_tracker
-      - vacuum
-      - group
-      - input_boolean
-      - cover
-      - person
-      - counter
-      - timer
   exclude:
     event_types:
       - service_removed
@@ -40,14 +26,14 @@ recorder:
       - script_started
       - timer_out_of_sync
 
-#influxdb:
-  #host: a0d7b954-influxdb
-  #port: 8086
-  #database: homeassistant
-  #username: homeassistant
-  #password: !secret influxdb_password
-  #max_retries: 3
-  #default_measurement: state
+influxdb:
+  host: a0d7b954-influxdb
+  port: 8086
+  database: homeassistant
+  username: homeassistant
+  password: !secret influxdb_password
+  max_retries: 3
+  default_measurement: state
 
 # Uncomment this if you are using SSL/TLS, running in Docker container, etc.
 # http:
@@ -63,17 +49,10 @@ namecheapdns:
 tts:
   - platform: google_translate
 
-http:
-  base_url: http://nstod.com:8123
-
 group: !include groups.yaml
 automation: !include automations.yaml
 script: !include scripts.yaml
 scene: !include scenes.yaml
-
-device_tracker:
-  - platform: eero_tracker
-    interval_seconds: 30
 
 # Leviton lights
 light:
@@ -221,37 +200,3 @@ sensor:
     sampling_size: 2880
     max_age:
       hours: 24
-  - platform: aquahawk
-    resource: https://sterco.aquahawk.us
-    value_template: '{{ value_json.meters[0].metricAggregates.waterUseActual.current["1 hour"].gallons }}'
-    unit_of_measurement: gallons
-    username: !secret aquahawk_username
-    password: !secret aquahawk_password
-    name: Water Meter
-    headers:
-      accept: application/json
-      Content-Type: application/x-www-form-urlencoded
-  - platform: aquahawk
-    resource: https://sterco.aquahawk.us
-    value_template: '{{ value_json.meters[0].metricAggregates.waterUseActual.current["billing period"].gallons }}'
-    unit_of_measurement: gallons
-    username: !secret aquahawk_username
-    password: !secret aquahawk_password
-    name: Water Meter Current Month
-    headers:
-      accept: application/json
-      Content-Type: application/x-www-form-urlencoded
-  - platform: aquahawk
-    resource: https://sterco.aquahawk.us
-    value_template: '{{ value_json.meters[0].metricAggregates.waterUse.projected["billing period"].gallons }}'
-    unit_of_measurement: gallons
-    username: !secret aquahawk_username
-    password: !secret aquahawk_password
-    name: Water Meter Projected
-    headers:
-      accept: application/json
-      Content-Type: application/x-www-form-urlencoded
-
-weather:
-  - platform: openweathermap
-    api_key: !secret openweathermap_api_key
