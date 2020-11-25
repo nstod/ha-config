@@ -111,7 +111,7 @@
                                 },
                                 {
                                     "type": "state-label",
-                                    "entity": "sensor.thermostat_current_temperature",
+                                    "entity": "sensor.living_room_current_temperature",
                                     "style": {
                                         "top": "32%",
                                         "left": "44%",
@@ -346,6 +346,21 @@
                     ],
                     "cards": [
                         {
+                            "type": "custom:battery-state-card",
+                            "title": "Battery Levels",
+                            "entities": [
+                                "sensor.front_door_battery",
+                                "sensor.garage_battery",
+                                "sensor.side_battery",
+                                "sensor.backyard_battery"
+                            ],
+                            "color_gradient": [
+                                "#ff0000",
+                                "#ffff00",
+                                "#00ff00"
+                            ]
+                        },
+                        {
                             "entities": [
                                 "cover.third_car_garage",
                                 "cover.2_car_garage"
@@ -365,10 +380,6 @@
                             ],
                             "title": "Light",
                             "type": "entities"
-                        },
-                        {
-                            "entity": "sensor.front_door_battery",
-                            "type": "custom:battery-entity"
                         },
                         {
                             "entities": [
@@ -407,16 +418,16 @@
                             "type": "entities",
                             "entities": [
                                 {
-                                    "entity": "light.260565305002911582e2"
+                                    "entity": "light.front_porch"
                                 },
                                 {
-                                    "entity": "light.233186405002910ff08e"
+                                    "entity": "light.garage_light_north"
                                 },
                                 {
-                                    "entity": "light.26056530b8f009013d2f"
+                                    "entity": "light.garage_light_mid"
                                 },
                                 {
-                                    "entity": "light.260565305002910dc8c0"
+                                    "entity": "light.garage_light_south"
                                 }
                             ],
                             "title": "Front Lights",
@@ -512,7 +523,7 @@
                             "type": "weather-forecast"
                         },
                         {
-                            "entity": "climate.living_room_thermostat",
+                            "entity": "climate.living_room",
                             "name": "Nest",
                             "type": "thermostat"
                         }

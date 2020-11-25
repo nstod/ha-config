@@ -1,0 +1,12 @@
+light.front_porch:
+  supported_features: 63
+light.garage_light_mid:
+  supported_features: 63
+light.garage_light_north:
+  supported_features: 63
+light.garage_light_south:
+  supported_features: 63
+device_tracker.00_6b_9e_0b_7b_3f:
+  friendly_name: Vizio Basement
+device_tracker.00_6b_9e_12_17_0c:
+  friendly_name: Vizio Playroom

@@ -17,7 +17,7 @@
         data:
           type: announce
         message: "Washing machine is finished"
-    - service: notify.mobile_app_nates_iphone
+    - service: notify.mobile_app_nate_iphone
       data:
         message: "Washing machine is finished"
 - alias: Restart HA
@@ -45,6 +45,6 @@
     platform: time
   action:
   - data:
-      addon: a0d7b954_ssh
+      addon: core_ssh
       input: /config/ha_gitpush.sh
     service: hassio.addon_stdin

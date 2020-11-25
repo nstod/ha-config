@@ -9,11 +9,6 @@
                 "url": "/hacsfiles/mini-media-player/mini-media-player-bundle.js"
             },
             {
-                "id": "f2c2aae2b7a743228f281c8e4a662dd5",
-                "type": "module",
-                "url": "/hacsfiles/battery-entity.js?v=0.2"
-            },
-            {
                 "id": "d9d6d62989d04638bcfc8f2fcee28f10",
                 "type": "module",
                 "url": "/local/floorplan/floorplan-card.js?v=1.1.14"
@@ -37,6 +32,16 @@
                 "url": "/hacsfiles/rgb-light-card/card.js",
                 "type": "module",
                 "id": "e50ea87b510241389e843211e2757f72"
+            },
+            {
+                "url": "/hacsfiles/battery-state-card/battery-state-card.js",
+                "type": "module",
+                "id": "4f7286e53c654ef2a4473aeb2b08a70f"
+            },
+            {
+                "url": "/config/www/community/battery-state-card/battery-state-card.js",
+                "type": "module",
+                "id": "33bc0e43c2a44c9e859fe2623e900a9e"
             }
         ]
     }

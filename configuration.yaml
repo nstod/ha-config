@@ -2,6 +2,9 @@
 # Configure a default setup of Home Assistant (frontend, api, etc)
 default_config:
 
+homeassistant:
+  customize: !include customize.yaml
+
 frontend:
   themes: !include_dir_merge_named themes
 
@@ -54,6 +57,10 @@ automation: !include automations.yaml
 script: !include scripts.yaml
 scene: !include scenes.yaml
 
+device_tracker:
+  - platform: eero_tracker
+    interval_seconds: 15
+
 # Leviton lights
 light:
   - platform: decora_wifi
@@ -66,14 +73,11 @@ tplink:
 rachio:
   api_key: !secret rachio_api_key
 
-badnest:
-  issue_token: !secret badnest_issue_token
-  cookie: !secret badnest_cookie
-  region: us
-
-climate:
-  - platform: badnest
-    scan_interval: 10
+nest:
+  client_id: !secret nest_client_id
+  client_secret: !secret nest_client_secret
+  project_id: !secret nest_project_id
+  subscriber_id: !secret nest_subscriber_id
 
 sensor:
   - platform: systemmonitor
@@ -83,7 +87,6 @@ sensor:
       - type: processor_use
       - type: processor_temperature
       - type: disk_use_percent
-  - platform: badnest
   - platform: template
     sensors:
       home_assistant_plug_current:
@@ -148,55 +151,37 @@ sensor:
         friendly_name_template: "{{ states.switch.drip.name }}"
         value_template: '{% if is_state("switch.drip", "on") %} 1 {% else %} 0 {% endif %}'
         unit_of_measurement: 'state'
-      thermostat_heating:
-        friendly_name_template: "{{ states.climate.living_room_thermostat.name}} Heating"
-        value_template: '{% if states.climate.living_room_thermostat.attributes["hvac_action"] == "heating" %} "on" {% else %} "off" {% endif %}'
-        unit_of_measurement: 'state'
-      thermostat_cooling:
-        friendly_name_template: "{{ states.climate.living_room_thermostat.name}} Cooling"
-        value_template: '{% if states.climate.living_room_thermostat.attributes["hvac_action"] == "cooling" %} "on" {% else %} "off" {% endif %}'
-        unit_of_measurement: 'state'
-      thermostat_current_temperature:
-        friendly_name_template: "{{ states.climate.living_room_thermostat.name}} Current Temp"
-        value_template: '{{states.climate.living_room_thermostat.attributes["current_temperature"] | float}}'
+      living_room_current_temperature:
+        friendly_name_template: "{{ states.climate.living_room.name}} Current Temp"
+        value_template: '{{states.climate.living_room.attributes["current_temperature"] | float | round(0)}}'
         unit_of_measurement: '°F'
-      thermostat_cooling_temp:
-        friendly_name_template: "{{ states.climate.living_room_thermostat.name}} Cooling Temp"
-        value_template: '{% if states.climate.living_room_thermostat.attributes["hvac_action"] == "cooling" %}{{states.climate.living_room_thermostat.attributes["current_temperature"] | float}}{% else %}0{% endif %}'
-        unit_of_measurement: '°F'
-      thermostat_heating_temp:
-        friendly_name_template: "{{ states.climate.living_room_thermostat.name}} Heating Temp"
-        value_template: '{% if states.climate.living_room_thermostat.attributes["hvac_action"] == "heating" %}{{states.climate.living_room_thermostat.attributes["current_temperature"] | float}}{% else %}0{% endif %}'
-        unit_of_measurement: '°F'
-      thermostat_target_temp_high:
-        friendly_name_template: "{{ states.climate.living_room_thermostat.name}} Target Temp High"
-        value_template: '{% if states.climate.living_room_thermostat.attributes["temperature"] != None %}{{ states.climate.living_room_thermostat.attributes["temperature"] | float }}{% else %}{{ states.climate.living_room_thermostat.attributes["target_temp_high"] | float }}{% endif %}'
-        unit_of_measurement: '°F'
-      thermostat_target_temp_low:
-        friendly_name_template: "{{ states.climate.living_room_thermostat.name}} Target Temp Low"
-        value_template: '{% if states.climate.living_room_thermostat.attributes["temperature"] != None %}{{ states.climate.living_room_thermostat.attributes["temperature"] | float }}{% else %}{{ states.climate.living_room_thermostat.attributes["target_temp_low"] | float }}{% endif %}'
-        unit_of_measurement: '°F'
-  - platform: statistics
-    entity_id: sensor.owm_temperature
-    name: 'Outside temp stats'
-    sampling_size: 2880
-    max_age:
-      hours: 24
-  - platform: statistics
-    entity_id: sensor.thermostat_current_temperature
-    name: 'Inside temp stats'
-    sampling_size: 2880
-    max_age:
-      hours: 24
-  - platform: statistics
-    entity_id: sensor.thermostat_target_temp_high
-    name: 'Inside high target temp stats'
-    sampling_size: 2880
-    max_age:
-      hours: 24
-  - platform: statistics
-    entity_id: sensor.thermostat_target_temp_low
-    name: 'Inside low target temp stats'
-    sampling_size: 2880
-    max_age:
-      hours: 24
+  - platform: aquahawk
+    resource: https://sterco.aquahawk.us
+    value_template: '{{ value_json.meters[0].metricAggregates.waterUseActual.current["1 hour"].gallons }}'
+    unit_of_measurement: gallons
+    username: !secret aquahawk_username
+    password: !secret aquahawk_password
+    name: Water Meter
+    headers:
+      accept: application/json
+      Content-Type: application/x-www-form-urlencoded
+  - platform: aquahawk
+    resource: https://sterco.aquahawk.us
+    value_template: '{{ value_json.meters[0].metricAggregates.waterUseActual.current["billing period"].gallons }}'
+    unit_of_measurement: gallons
+    username: !secret aquahawk_username
+    password: !secret aquahawk_password
+    name: Water Meter Current Month
+    headers:
+      accept: application/json
+      Content-Type: application/x-www-form-urlencoded
+  - platform: aquahawk
+    resource: https://sterco.aquahawk.us
+    value_template: '{{ value_json.meters[0].metricAggregates.waterUse.projected["billing period"].gallons }}'
+    unit_of_measurement: gallons
+    username: !secret aquahawk_username
+    password: !secret aquahawk_password
+    name: Water Meter Projected
+    headers:
+      accept: application/json
+      Content-Type: application/x-www-form-urlencoded

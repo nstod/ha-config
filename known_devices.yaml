@@ -735,3 +735,52 @@ b8_f0_09_01_3d_2f:
   icon:
   picture:
   track: true
+
+ring_backyard_camera:
+  name: Ring Backyard Camera
+  mac: 54:E0:19:9D:C8:9B
+  icon:
+  picture:
+  track: true
+
+ring_garage_camera:
+  name: Ring Garage Camera
+  mac: 54:E0:19:9D:DA:A4
+  icon:
+  picture:
+  track: true
+
+living_room_roku:
+  name: Living Room Roku
+  mac: 10:59:32:7F:A6:AC
+  icon:
+  picture:
+  track: true
+
+ring_base_station:
+  name: Ring Base Station
+  mac: B0:09:DA:2C:AD:9F
+  icon:
+  picture:
+  track: true
+
+64_0b_d7_30_a8_06:
+  name: 64_0b_d7_30_a8_06
+  mac: 64:0B:D7:30:A8:06
+  icon:
+  picture:
+  track: true
+
+nate_iphone_11:
+  name: Nate iPhone 11
+  mac: E0:2B:96:CF:E2:08
+  icon:
+  picture:
+  track: true
+
+ring_side_camera:
+  name: Ring Side Camera
+  mac: 54:E0:19:9D:C9:DA
+  icon:
+  picture:
+  track: true
