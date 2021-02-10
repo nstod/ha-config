@@ -10,24 +10,8 @@ frontend:
 
 recorder:
   db_url: !secret db_url
-  commit_interval: 5
-  purge_keep_days: 5
-  exclude:
-    event_types:
-      - service_removed
-      - service_executed
-      - platform_discovered
-      - homeassistant_start
-      - homeassistant_stop
-      - feedreader
-      - service_registered
-      - call_service
-      - component_loaded
-      - logbook_entry
-      - system_log_event
-      - automation_triggered
-      - script_started
-      - timer_out_of_sync
+  commit_interval: 10
+  purge_keep_days: 1
 
 influxdb:
   host: a0d7b954-influxdb
@@ -59,7 +43,7 @@ scene: !include scenes.yaml
 
 device_tracker:
   - platform: eero_tracker
-    interval_seconds: 15
+    interval_seconds: 30
 
 # Leviton lights
 light:
@@ -73,13 +57,23 @@ tplink:
 rachio:
   api_key: !secret rachio_api_key
 
+climate:
+
 nest:
   client_id: !secret nest_client_id
   client_secret: !secret nest_client_secret
   project_id: !secret nest_project_id
   subscriber_id: !secret nest_subscriber_id
 
+#counter:
+#  dryer_counter:
+#    initial: 0
+#    step: 1
+
 sensor:
+  - platform: mqtt
+    name: "Dryer Motion"
+    state_topic: stat/tasmota_26ECE5/motion
   - platform: systemmonitor
     resources:
       - type: memory_use_percent
@@ -89,6 +83,9 @@ sensor:
       - type: disk_use_percent
   - platform: template
     sensors:
+#      dryer_state:
+#        friendly_name_template: "Dryer State"
+#        value_template: '{% if is_state("sensor.dryer_motion", "ON") %} Running {% else %} Idle {% endif %}'
       home_assistant_plug_current:
         friendly_name_template: "{{ states.switch.home_assistant.name}} Current"
         value_template: '{{ states.switch.home_assistant.attributes["current_a"] | float }}'

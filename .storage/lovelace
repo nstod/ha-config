@@ -218,6 +218,81 @@
                                 },
                                 {
                                     "type": "image",
+                                    "entity": "switch.tanner",
+                                    "tap_action": "none",
+                                    "hold_action": "none",
+                                    "state_image": {
+                                        "on": "/local/floorplan3d/caleb_on.png",
+                                        "off": "/local/floorplan3d/caleb_off.png"
+                                    },
+                                    "style": {
+                                        "top": "50%",
+                                        "left": "50%",
+                                        "width": "100%"
+                                    }
+                                },
+                                {
+                                    "type": "image",
+                                    "entity": "switch.bailey_and_caleb",
+                                    "tap_action": "none",
+                                    "hold_action": "none",
+                                    "state_image": {
+                                        "on": "/local/floorplan3d/bailey_on.png",
+                                        "off": "/local/floorplan3d/bailey_off.png"
+                                    },
+                                    "style": {
+                                        "top": "50%",
+                                        "left": "50%",
+                                        "width": "100%"
+                                    }
+                                },
+                                {
+                                    "type": "image",
+                                    "entity": "switch.annalee",
+                                    "tap_action": "none",
+                                    "hold_action": "none",
+                                    "state_image": {
+                                        "on": "/local/floorplan3d/annalee_on.png",
+                                        "off": "/local/floorplan3d/annalee_off.png"
+                                    },
+                                    "style": {
+                                        "top": "50%",
+                                        "left": "50%",
+                                        "width": "100%"
+                                    }
+                                },
+                                {
+                                    "type": "image",
+                                    "entity": "switch.jacob",
+                                    "tap_action": "none",
+                                    "hold_action": "none",
+                                    "state_image": {
+                                        "on": "/local/floorplan3d/boys_on.png",
+                                        "off": "/local/floorplan3d/boys_off.png"
+                                    },
+                                    "style": {
+                                        "top": "50%",
+                                        "left": "50%",
+                                        "width": "100%"
+                                    }
+                                },
+                                {
+                                    "type": "image",
+                                    "entity": "switch.master_lamp",
+                                    "tap_action": "none",
+                                    "hold_action": "none",
+                                    "state_image": {
+                                        "on": "/local/floorplan3d/master_lamp_on.png",
+                                        "off": "/local/floorplan3d/transparent_square.png"
+                                    },
+                                    "style": {
+                                        "top": "50%",
+                                        "left": "50%",
+                                        "width": "100%"
+                                    }
+                                },
+                                {
+                                    "type": "image",
                                     "entity": "media_player.samsung_un50ku6300",
                                     "tap_action": "none",
                                     "hold_action": "none",
@@ -241,11 +316,12 @@
                                     ],
                                     "elements": [
                                         {
-                                            "type": "state-label",
+                                            "type": "state-icon",
                                             "entity": "sensor.washing_machine_state",
+                                            "icon": "mdi:washing-machine",
                                             "style": {
-                                                "top": "35%",
-                                                "left": "68%",
+                                                "top": "34%",
+                                                "left": "76.5%",
                                                 "color": "#000",
                                                 "border-radius": "50%",
                                                 "text-align": "center",
@@ -266,17 +342,72 @@
                                     ],
                                     "elements": [
                                         {
-                                            "type": "state-label",
+                                            "type": "state-icon",
                                             "entity": "sensor.washing_machine_state",
+                                            "icon": "mdi:washing-machine",
                                             "style": {
-                                                "top": "35%",
+                                                "top": "34%",
+                                                "left": "76.5%",
+                                                "color": "#000",
+                                                "border-radius": "50%",
+                                                "text-align": "center",
+                                                "background-color": "rgba(255, 255, 255, 0.3)",
+                                                "font-size": "11px",
+                                                "font-weight": "bold",
+                                                "--paper-item-icon-color": "gray"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "conditional",
+                                    "conditions": [
+                                        {
+                                            "entity": "input_boolean.dryer_state",
+                                            "state": "on"
+                                        }
+                                    ],
+                                    "elements": [
+                                        {
+                                            "type": "state-icon",
+                                            "entity": "input_boolean.dryer_state",
+                                            "icon": "mdi:tumble-dryer",
+                                            "style": {
+                                                "top": "34%",
+                                                "left": "68%",
+                                                "color": "#000",
+                                                "border-radius": "50%",
+                                                "text-align": "center",
+                                                "background-color": "rgba(0, 255, 0, 0.3)",
+                                                "font-size": "11px",
+                                                "font-weight": "bold"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "conditional",
+                                    "conditions": [
+                                        {
+                                            "entity": "input_boolean.dryer_state",
+                                            "state": "off"
+                                        }
+                                    ],
+                                    "elements": [
+                                        {
+                                            "type": "state-icon",
+                                            "entity": "input_boolean.dryer_state",
+                                            "icon": "mdi:tumble-dryer",
+                                            "style": {
+                                                "top": "34%",
                                                 "left": "68%",
                                                 "color": "#000",
                                                 "border-radius": "50%",
                                                 "text-align": "center",
                                                 "background-color": "rgba(255, 255, 255, 0.3)",
                                                 "font-size": "11px",
-                                                "font-weight": "bold"
+                                                "font-weight": "bold",
+                                                "--paper-item-icon-color": "gray"
                                             }
                                         }
                                     ]
@@ -291,6 +422,66 @@
                                     "style": {
                                         "top": "23.5%",
                                         "left": "26.5%"
+                                    }
+                                },
+                                {
+                                    "type": "image",
+                                    "entity": "switch.jacob",
+                                    "tap_action": {
+                                        "action": "toggle"
+                                    },
+                                    "image": "/local/floorplan3d/transparent_square_small.png",
+                                    "style": {
+                                        "top": "14%",
+                                        "left": "69.5%"
+                                    }
+                                },
+                                {
+                                    "type": "image",
+                                    "entity": "switch.annalee",
+                                    "tap_action": {
+                                        "action": "toggle"
+                                    },
+                                    "image": "/local/floorplan3d/transparent_square_small.png",
+                                    "style": {
+                                        "top": "15%",
+                                        "left": "50%"
+                                    }
+                                },
+                                {
+                                    "type": "image",
+                                    "entity": "switch.bailey_and_caleb",
+                                    "tap_action": {
+                                        "action": "toggle"
+                                    },
+                                    "image": "/local/floorplan3d/transparent_square_small.png",
+                                    "style": {
+                                        "top": "64.5%",
+                                        "left": "71%"
+                                    }
+                                },
+                                {
+                                    "type": "image",
+                                    "entity": "switch.tanner",
+                                    "tap_action": {
+                                        "action": "toggle"
+                                    },
+                                    "image": "/local/floorplan3d/transparent_square_small.png",
+                                    "style": {
+                                        "top": "64.5%",
+                                        "left": "48%"
+                                    }
+                                },
+                                {
+                                    "type": "image",
+                                    "entity": "switch.master_lamp",
+                                    "tap_action": {
+                                        "action": "toggle"
+                                    },
+                                    "image": "/local/floorplan3d/transparent_square_small.png",
+                                    "style": {
+                                        "top": "18%",
+                                        "left": "41%"
                                     }
                                 },
                                 {
@@ -350,9 +541,14 @@
                             "title": "Battery Levels",
                             "entities": [
                                 "sensor.front_door_battery",
-                                "sensor.garage_battery",
-                                "sensor.side_battery",
-                                "sensor.backyard_battery"
+                                "sensor.driveway_battery",
+                                "sensor.north_side_battery",
+                                "sensor.back_door_battery",
+                                "sensor.backyard_battery",
+                                "sensor.front_yard_battery",
+                                "sensor.south_side_battery",
+                                "sensor.garage_keypad_info",
+                                "sensor.bedroom_keypad_info"
                             ],
                             "color_gradient": [
                                 "#ff0000",
@@ -938,8 +1134,15 @@
                         },
                         {
                             "entities": [
-                                "automation.notify_when_washing_machine_is_done",
-                                "switch.washer"
+                                {
+                                    "entity": "switch.washer"
+                                },
+                                {
+                                    "entity": "automation.notify_when_washing_machine_is_done"
+                                },
+                                {
+                                    "entity": "automation.notify_when_dryer_is_done"
+                                }
                             ],
                             "title": "Laundry",
                             "type": "entities"
@@ -954,6 +1157,17 @@
                             "refresh_interval": 0,
                             "title": "Washer",
                             "type": "history-graph"
+                        },
+                        {
+                            "type": "history-graph",
+                            "entities": [
+                                {
+                                    "entity": "input_boolean.dryer_state"
+                                }
+                            ],
+                            "hours_to_show": 24,
+                            "refresh_interval": 0,
+                            "title": "Dryer"
                         }
                     ],
                     "icon": "mdi:washing-machine",

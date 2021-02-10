@@ -784,3 +784,262 @@ ring_side_camera:
   icon:
   picture:
   track: true
+
+54_e0_19_99_92_c2:
+  name: 54_e0_19_99_92_c2
+  mac: 54:E0:19:99:92:C2
+  icon:
+  picture:
+  track: true
+
+54_e0_19_99_92_a1:
+  name: 54_e0_19_99_92_a1
+  mac: 54:E0:19:99:92:A1
+  icon:
+  picture:
+  track: true
+
+54_e0_19_99_94_1a:
+  name: 54_e0_19_99_94_1a
+  mac: 54:E0:19:99:94:1A
+  icon:
+  picture:
+  track: true
+
+76_a0_ae_92_74_42:
+  name: 76_a0_ae_92_74_42
+  mac: 76:A0:AE:92:74:42
+  icon:
+  picture:
+  track: true
+
+e6_34_3f_ea_e0_f5:
+  name: e6_34_3f_ea_e0_f5
+  mac: E6:34:3F:EA:E0:F5
+  icon:
+  picture:
+  track: true
+
+98_e0_d9_ea_50_ac:
+  name: 98_e0_d9_ea_50_ac
+  mac: 98:E0:D9:EA:50:AC
+  icon:
+  picture:
+  track: true
+
+00_fc_8b_dc_58_20:
+  name: 00_fc_8b_dc_58_20
+  mac: 00:FC:8B:DC:58:20
+  icon:
+  picture:
+  track: true
+
+b8_5f_98_a0_0d_67:
+  name: b8_5f_98_a0_0d_67
+  mac: B8:5F:98:A0:0D:67
+  icon:
+  picture:
+  track: true
+
+40_f5_20_e4_bb_a9:
+  name: 40_f5_20_e4_bb_a9
+  mac: 40:F5:20:E4:BB:A9
+  icon:
+  picture:
+  track: true
+
+10_52_1c_c4_62_77:
+  name: 10_52_1c_c4_62_77
+  mac: 10:52:1C:C4:62:77
+  icon:
+  picture:
+  track: true
+
+16_6b_03_2f_f2_23:
+  name: 16_6b_03_2f_f2_23
+  mac: 16:6B:03:2F:F2:23
+  icon:
+  picture:
+  track: true
+
+jaredsaplewatch:
+  name: JaredsApleWatch
+  mac: 6E:E3:7B:B9:0E:F2
+  icon:
+  picture:
+  track: true
+
+10_52_1c_c0_c1_47:
+  name: 10_52_1c_c0_c1_47
+  mac: 10:52:1C:C0:C1:47
+  icon:
+  picture:
+  track: true
+
+e0_98_06_c9_36_bd:
+  name: e0_98_06_c9_36_bd
+  mac: E0:98:06:C9:36:BD
+  icon:
+  picture:
+  track: true
+
+5e_0e_29_90_b6_22:
+  name: 5e_0e_29_90_b6_22
+  mac: 5E:0E:29:90:B6:22
+  icon:
+  picture:
+  track: true
+
+10_52_1c_c5_17_1c:
+  name: 10_52_1c_c5_17_1c
+  mac: 10:52:1C:C5:17:1C
+  icon:
+  picture:
+  track: true
+
+88_07_4b_e7_58_07:
+  name: 88_07_4b_e7_58_07
+  mac: 88:07:4B:E7:58:07
+  icon:
+  picture:
+  track: true
+
+f4_09_d8_bc_3a_1c:
+  name: f4_09_d8_bc_3a_1c
+  mac: F4:09:D8:BC:3A:1C
+  icon:
+  picture:
+  track: true
+
+a0_02_dc_09_0d_d8:
+  name: a0_02_dc_09_0d_d8
+  mac: A0:02:DC:09:0D:D8
+  icon:
+  picture:
+  track: true
+
+10_8e_e0_3c_11_86:
+  name: 10_8e_e0_3c_11_86
+  mac: 10:8E:E0:3C:11:86
+  icon:
+  picture:
+  track: true
+
+e0_cb_1d_ff_19_5e:
+  name: e0_cb_1d_ff_19_5e
+  mac: E0:CB:1D:FF:19:5E
+  icon:
+  picture:
+  track: true
+
+44_65_0d_fa_ce_1e:
+  name: 44_65_0d_fa_ce_1e
+  mac: 44:65:0D:FA:CE:1E
+  icon:
+  picture:
+  track: true
+
+88_71_e5_e1_a8_e4:
+  name: 88_71_e5_e1_a8_e4
+  mac: 88:71:E5:E1:A8:E4
+  icon:
+  picture:
+  track: true
+
+e8_da_20_c1_c7_24:
+  name: e8_da_20_c1_c7_24
+  mac: E8:DA:20:C1:C7:24
+  icon:
+  picture:
+  track: true
+
+dc_41_a9_e2_ba_c6:
+  name: dc_41_a9_e2_ba_c6
+  mac: DC:41:A9:E2:BA:C6
+  icon:
+  picture:
+  track: true
+
+18_3e_ef_cc_bd_9e:
+  name: 18_3e_ef_cc_bd_9e
+  mac: 18:3E:EF:CC:BD:9E
+  icon:
+  picture:
+  track: true
+
+d6_95_31_6c_03_de:
+  name: d6_95_31_6c_03_de
+  mac: D6:95:31:6C:03:DE
+  icon:
+  picture:
+  track: true
+
+f6_1a_c8_61_77_aa:
+  name: f6_1a_c8_61_77_aa
+  mac: F6:1A:C8:61:77:AA
+  icon:
+  picture:
+  track: true
+
+e0_98_06_c9_3e_fb:
+  name: e0_98_06_c9_3e_fb
+  mac: E0:98:06:C9:3E:FB
+  icon:
+  picture:
+  track: true
+
+f4_cf_a2_0a_16_54:
+  name: f4_cf_a2_0a_16_54
+  mac: F4:CF:A2:0A:16:54
+  icon:
+  picture:
+  track: true
+
+c8_2b_96_c5_e4_eb:
+  name: c8_2b_96_c5_e4_eb
+  mac: C8:2B:96:C5:E4:EB
+  icon:
+  picture:
+  track: true
+
+de_66_20_e0_7b_81:
+  name: de_66_20_e0_7b_81
+  mac: DE:66:20:E0:7B:81
+  icon:
+  picture:
+  track: true
+
+iphone_dx3f15hkn72q:
+  name: iPhone-DX3F15HKN72Q
+  mac: C2:62:D9:BB:90:AD
+  icon:
+  picture:
+  track: true
+
+adrian_watch:
+  name: Adrian watch
+  mac: 72:F2:03:F1:21:08
+  icon:
+  picture:
+  track: true
+
+2a_97_94_d2_89_cb:
+  name: 2a_97_94_d2_89_cb
+  mac: 2A:97:94:D2:89:CB
+  icon:
+  picture:
+  track: true
+
+40_f5_20_26_ec_e5:
+  name: 40_f5_20_26_ec_e5
+  mac: 40:F5:20:26:EC:E5
+  icon:
+  picture:
+  track: true
+
+a6_72_8a_76_c6_78:
+  name: a6_72_8a_76_c6_78
+  mac: A6:72:8A:76:C6:78
+  icon:
+  picture:
+  track: true

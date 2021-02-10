@@ -1,25 +1,69 @@
-- alias: "Notify when washing machine is done"
-  trigger:
-    platform: state
-    entity_id: sensor.washing_machine_state
-    from: 'Running'
-    to: 'Idle'
-    for:
-      seconds: 60
-  action:
-    - service: notify.alexa_media
-      data:
-        target:
-          - media_player.kitchen
-          - media_player.office
-          - media_player.master
-        title: "Washing machine finished"
-        data:
-          type: announce
-        message: "Washing machine is finished"
-    - service: notify.mobile_app_nate_iphone
-      data:
-        message: "Washing machine is finished"
+#- alias: "Notify when washing machine is done"
+#  trigger:
+#    platform: state
+#    entity_id: sensor.washing_machine_state
+#    from: 'Running'
+#    to: 'Idle'
+#    for:
+#      seconds: 60
+#  action:
+#    - service: notify.alexa_media
+#      data:
+#        target:
+#          - media_player.kitchen
+#          - media_player.office
+#          - media_player.master
+#        title: "Washing machine is finished"
+#        data:
+#          type: announce
+#        message: "Washing machine is finished"
+#    - service: notify.mobile_app_iphone_dx3df4svn72q
+#      data:
+#        message: "Washing machine is finished"
+#- alias: "Set dryer state on"
+#  trigger:
+#    platform: state
+#    entity_id: sensor.dryer_motion
+#    from: 'OFF'
+#    to: 'ON'
+#    for:
+#      seconds: 60
+#  action:
+#    - service: input_boolean.turn_on
+#      data:
+#        entity_id: input_boolean.dryer_state
+#- alias: "Set dryer state off"
+#  trigger:
+#    platform: state
+#    entity_id: sensor.dryer_motion
+#    from: 'ON'
+#    to: 'OFF'
+#    for:
+#      seconds: 60
+#  action:
+#    - service: input_boolean.turn_off
+#      data:
+#        entity_id: input_boolean.dryer_state
+#- alias: "Notify when dryer is done"
+#  trigger:
+#    platform: state
+#    entity_id: input_boolean.dryer_state
+#    from: 'on'
+#    to: 'off'
+#  action:
+#    - service: notify.alexa_media
+#      data:
+#        target:
+#          - media_player.kitchen
+#          - media_player.office
+#          - media_player.master
+#        title: "Dryer is finished"
+#        data:
+#          type: announce
+#        message: "Dryer is finished"
+#    - service: notify.mobile_app_iphone_dx3df4svn72q
+#      data:
+#        message: "Dryer is finished"
 - alias: Restart HA
   trigger:
     platform: time
